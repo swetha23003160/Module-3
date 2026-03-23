@@ -1,3 +1,4 @@
+
 # Regex in Python: Filter Words Without the Letter 'e'
 
 ## 🎯 Aim
@@ -14,7 +15,17 @@ To write a Python program that filters out and returns all elements from a list 
 5. Print the final filtered list.
 
 ## 🧾 Program
-Add code here
+```
+import re
+l1 = []
+items = ['goal', 'new', 'user', 'sit', 'eat', 'dinner']
+for i in items:
+    if not re.search(r"e", i):
+        l1.append(i)
+print("Words without 'e':", l1)
+```
 ## Output
+<img width="532" height="161" alt="image" src="https://github.com/user-attachments/assets/4bd9cf1f-c72a-45f9-a563-17a71adeabcf" />
 
 ## Result
+Thus, the python program using Regex has been executed successfully.
